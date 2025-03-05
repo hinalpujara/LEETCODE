@@ -7,6 +7,7 @@ class Solution {
           if(sum<max)
           {
             sum = max;
+
           }
           if(max<0){
             max = 0;
