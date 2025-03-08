@@ -8,9 +8,11 @@ class Solution {
         int maxProfit = 0;
         
         for (int i = 0; i < prices.length; i++) {
+            // Update minPrice if current price is lower
             if (prices[i] < minPrice) {
                 minPrice = prices[i];
             }
+            // Calculate profit if selling at current price
             int profit = prices[i] - minPrice;
             maxProfit = Math.max(maxProfit, profit);
         }
