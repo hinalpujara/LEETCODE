@@ -14,7 +14,10 @@ class Solution {
             }
             // Calculate profit if selling at current price
             int profit = prices[i] - minPrice;
-            maxProfit = Math.max(maxProfit, profit);
+            if(maxProfit < profit){
+                maxProfit = profit;
+            }
+            // maxProfit = Math.max(maxProfit, profit);
         }
         
         return maxProfit;
