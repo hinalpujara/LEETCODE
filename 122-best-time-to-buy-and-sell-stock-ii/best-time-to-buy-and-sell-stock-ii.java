@@ -11,7 +11,7 @@ class Solution {
             }
             else if(sellPrice > buyPrice)
             {
-                profit = profit + (sellPrice - buyPrice);
+                profit  += (sellPrice - buyPrice);
                 buyPrice = sellPrice;
             }
         }
