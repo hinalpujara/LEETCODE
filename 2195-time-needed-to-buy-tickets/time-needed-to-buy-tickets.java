@@ -8,7 +8,6 @@ class Solution {
                 if (tickets[i] > 0) {
                     tickets[i]--;
                     totalTime++;
-
                     if (i == k && tickets[k] == 0) {
                         return totalTime;
                     }
