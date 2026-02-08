@@ -7,12 +7,7 @@ class Solution {
         return str1.substring(0,gcdLen);
     }
     private int gcd(int a, int b) {
-    while (b != 0) {
-        int r = a % b;
-        a = b;
-        b = r;
-    }
-    return a;
+    return b == 0 ? a : gcd(b, a % b);
 }
 
 }
