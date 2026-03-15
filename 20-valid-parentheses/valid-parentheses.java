@@ -7,12 +7,12 @@ class Solution {
             }
             else{
                 if(stack.isEmpty()) return false;
-                if(c == ')' && stack.pop() != '(') return false;
-                if(c == ']' && stack.pop() != '[') return false;
-                if(c == '}' && stack.pop() != '{') return false;
+                char top = stack.pop();
+                if(c == ')' && top != '(') return false;
+                if(c == ']' && top != '[') return false;
+                if(c == '}' && top != '{') return false;
             }
         }
         return stack.isEmpty();
-
     }
 }
